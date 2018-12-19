@@ -1,7 +1,18 @@
-<h1>Results</h1>
+<h1 style="text-align: center;">Results</h1>
 
-
+<div style="text-align: center;">
+<ul>
 <% data["Search"].forEach(function(movie){ %>
-	<li><%= movie["Title"] %></li>
+	<li style="list-style-type:none;"> 
+	<strong><%= movie["Title"] %></strong> : <em><%= movie["Year"] %></em>
+	</li>
 
 <% }) %>
+</ul>
+</div>
+
+<br>
+<br>
+<div style="text-align: center;">
+<a href="/">New Search</a>
+</div>
